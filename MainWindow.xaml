@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Авторизация в системе" Height="450" Width="800" Background="#FF9A0FFF" Closing="Window_Closing">
+    <Window.Resources>
+       
+    </Window.Resources>
+    <Grid>
+        <Label x:Name="Error" Foreground="#FFFD0404" Margin="264,41,72,333" />
+        <TextBox x:Name="LoginBox" Margin="252,106,310,242" />
+        <TextBox x:Name="ShowBox" Margin="252,197,310,158" Visibility ="Collapsed"/>
+        <PasswordBox x:Name="PasswordBox" Margin="252,197,310,158"/>
+        <TextBlock Text="не зарегистрированы?" Margin="32,281,437,91" FontSize="28"/>
+        <Image Source="/Sourve/login.png" Margin="183,112,580,264"/>
+        <Image Source="/Sourve/зфыыцщкв.png" Margin="183,200,568,167"/>
+        <Button x:Name="Regitration" Content="Зарегистрироваться" Margin="386,278,96,97" Background="{x:Null}" FontSize="28" Click="ComeToReg"/>
+        <Button x:Name="Loginn" Content="Войти" Margin="316,343,348,39" Click="Loginn_Click" Background="#FF0CC564" />
+        <Button x:Name="Hide" Margin="503,208,179,158" Background="{x:Null}" Click="Hide_Click">
+            <Image x:Name="eye1" Height="64" Source="/Sourve/eye.png" Stretch="Fill" Width="75"/>
+        </Button>
+        <Button x:Name="Show" Margin="503,208,179,158" Background="{x:Null}" Click="Hide_Click" Visibility="Collapsed">
+            <Image x:Name="eye2" Height="64" Source="/Sourve/eye2.png" Stretch="Fill" Width="75" />
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Sourve\convert.png" />
+    <None Remove="Sourve\email.png" />
+    <None Remove="Sourve\eye.png" />
+    <None Remove="Sourve\eye2.png" />
+    <None Remove="Sourve\lgin.png" />
+    <None Remove="Sourve\login.png" />
+    <None Remove="Sourve\old_password.png" />
+    <None Remove="Sourve\password.png" />
+    <None Remove="Sourve\зфыыцщкв.png" />
+    <None Remove="Sourve\лгин.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sourve\convert.png" />
+    <Resource Include="Sourve\eye.png" />
+    <Resource Include="Sourve\eye2.png" />
+    <Resource Include="Sourve\login.png" />
+    <Resource Include="Sourve\зфыыцщкв.png" />
+  </ItemGroup>
+
+</Project>
